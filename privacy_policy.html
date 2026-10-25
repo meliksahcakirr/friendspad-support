@@ -32,7 +32,7 @@
       <ul>
         <li>What you write in Friendpad (friends, notes, meetups, birthdays) is stored on your device and is not uploaded.</li>
         <li>You don't sign up. The app signs in anonymously with Firebase, which gives it a random ID that isn't linked to your name or email.</li>
-        <li>The app sends usage statistics to Google Analytics for Firebase to help improve it. They never include your notes or your friends' names.</li>
+        <li>The app sends usage statistics to Google Analytics for Firebase and crash reports to Firebase Crashlytics to help improve it. They never include your notes or your friends' names.</li>
         <li>There are no ads, and your data is not sold.</li>
       </ul>
     </div>
@@ -48,7 +48,8 @@
       <li>Which screens and features you use (for example, that a meetup was logged or a friend was added), the time and date and how long you use the Application</li>
       <li>Your device model, operating system and version, app version, language and approximate region (derived from your IP address)</li>
     </ul>
-    <p>These events never include the text you write, your friends' names or other content you enter. The Application does not use advertising SDKs, and the data is not used for advertising or sold.</p>
+    <p><strong>Crash reports.</strong> If the Application crashes or hits a serious error, Firebase Crashlytics sends a crash report. It includes the anonymous user ID, a Crashlytics installation identifier, the error and the code location where it happened, device model, operating system and version, app version, free memory and disk space, orientation and whether the app was in the foreground, and the time of the crash.</p>
+    <p>Usage events and crash reports never include the text you write, your friends' names or other content you enter. The Application does not use advertising SDKs, and the data is not used for advertising or sold.</p>
 
     <h2>Notifications</h2>
     <p>If you allow notifications, reminders (meetup briefs, birthdays, life events, fading bonds and a weekly digest) are scheduled locally by your device's operating system. They are not sent from a server, and no push token is created or shared. You can turn each kind of reminder off in the Application's settings, or turn notifications off in your device settings.</p>
@@ -57,33 +58,33 @@
     <p>If you choose "Email support" in the Application, your email app opens with a draft addressed to the Service Provider. The draft includes the app version, your device model and operating system version to help with troubleshooting. Nothing is sent until you send the email yourself. The Service Provider uses your email and its contents only to answer you, and deletes support emails when they are no longer needed.</p>
 
     <h2>Third-Party Services</h2>
-    <p>The Application uses Google's Firebase services (Firebase Authentication and Google Analytics for Firebase), which process the data described above on the Service Provider's behalf. The Application is distributed through the Apple App Store and Google Play. When the Application asks you to rate it, the rating prompt is shown by Apple or Google, and the Application does not learn whether or how you rated it. These services handle data under their own privacy policies:</p>
+    <p>The Application uses Google's Firebase services (Firebase Authentication, Google Analytics for Firebase and Firebase Crashlytics), which process the data described above on the Service Provider's behalf. The Application is distributed through the Apple App Store and Google Play. When the Application asks you to rate it, the rating prompt is shown by Apple or Google, and the Application does not learn whether or how you rated it. These services handle data under their own privacy policies:</p>
     <ul>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase (Authentication and Google Analytics for Firebase)</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase (Authentication, Google Analytics for Firebase and Crashlytics)</a></li>
       <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
     </ul>
 
     <h2>International Data Transfers</h2>
-    <p>Firebase may process usage data on servers outside your country of residence, including outside the European Economic Area. Where the law requires safeguards for such transfers, Google relies on mechanisms such as Standard Contractual Clauses approved by the European Commission.</p>
+    <p>Firebase may process usage data and crash reports on servers outside your country of residence, including outside the European Economic Area. Where the law requires safeguards for such transfers, Google relies on mechanisms such as Standard Contractual Clauses approved by the European Commission.</p>
 
     <h2>Information About Other People</h2>
     <p>The notes you keep are about your friends and the people in their lives. Please write respectfully and only what you would be comfortable with them seeing, and keep your device locked. This information stays on your device and is never shared by the Application.</p>
 
     <h2>Your Rights</h2>
     <p>You are in full control of the content on your device: you can view and edit everything in the Application, delete a friend to remove everything about them, or delete the Application to remove all of its content.</p>
-    <p>You may request access to or deletion of the anonymous usage data linked to your installation, or object to its processing. Because it is not tied to your name, please include the User ID shown in the support email the Application prepares (Settings → Help and support → Email support) so it can be found. Contact the Service Provider at <a href="mailto:meliksahcakir.apps@gmail.com">meliksahcakir.apps@gmail.com</a>.</p>
+    <p>You may request access to or deletion of the anonymous usage data and crash reports linked to your installation, or object to its processing. Because it is not tied to your name, please include the User ID shown in the support email the Application prepares (Settings → Help and support → Email support) so it can be found. Contact the Service Provider at <a href="mailto:meliksahcakir.apps@gmail.com">meliksahcakir.apps@gmail.com</a>.</p>
     <p>If you are a California resident (CCPA/CPRA) or in the European Economic Area or United Kingdom (GDPR), you have rights to know, access, correct and delete personal data, to object to or restrict processing, and not to be discriminated against for using these rights. The Service Provider does not sell personal information or share it for cross-context behavioural advertising.</p>
 
     <h2>Data Retention and Deletion</h2>
     <p>Content in the Application stays on your device until you delete it. Your device's own backups (such as iCloud or Google device backups, if you have turned them on) may include the Application's data; those backups are managed by Apple or Google under your account, not by the Service Provider.</p>
-    <p>Usage data in Google Analytics for Firebase is kept for up to 14 months and then deleted automatically. The anonymous user ID is removed when you delete the Application; a new one is created if you install it again. Aggregated statistics that no longer relate to an installation may be kept longer. Deletion requests are handled within the time limits set by applicable law.</p>
+    <p>Usage data in Google Analytics for Firebase is kept for up to 14 months, and crash reports in Firebase Crashlytics for 90 days, and then deleted automatically. The anonymous user ID is removed when you delete the Application; a new one is created if you install it again. Aggregated statistics that no longer relate to an installation may be kept longer. Deletion requests are handled within the time limits set by applicable law.</p>
 
     <h2>Children</h2>
     <p>The Application is not intended for children under 16 years of age. The Service Provider does not knowingly collect personal data from children. If you are a parent or guardian and believe your child has used the Application, contact the Service Provider and the related usage data will be deleted.</p>
 
     <h2>Security</h2>
-    <p>The content you write is protected by your device's own security, so keep your device locked with a passcode or biometrics. Usage data is sent to Firebase over encrypted connections. The Service Provider uses reasonable safeguards to protect the information it processes, and will notify you of a data breach affecting your personal data where the law requires it.</p>
+    <p>The content you write is protected by your device's own security, so keep your device locked with a passcode or biometrics. Usage data and crash reports are sent to Firebase over encrypted connections. The Service Provider uses reasonable safeguards to protect the information it processes, and will notify you of a data breach affecting your personal data where the law requires it.</p>
 
     <h2>Changes</h2>
     <p>If a future version adds features such as backup or sync that would move your content off your device, this policy will be updated before that happens. The updated policy will be posted on this page with a new effective date, and material changes will be explained in the Application.</p>
