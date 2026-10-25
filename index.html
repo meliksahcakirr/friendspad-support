@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Friendpad: Notes &amp; Birthdays</title>
+  <meta name="description" content="Friendpad helps you remember what friends tell you: notes, talking points, meetups, birthdays and a little bond that grows each time you meet. Help, FAQ and contact." />
+  <meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1C222B" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Friendpad: Notes &amp; Birthdays" />
+  <meta property="og:description" content="Remember what friends tell you. Notes, meetups, birthdays and bonds that grow when you meet." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://meliksahcakirr.github.io/friendspad-support/img/app_icon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./"><img class="logo" src="img/app_icon.png" alt="" /> Friendpad</a>
+      <nav class="topnav">
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="#privacy">Your data</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">Notes &amp; Birthdays</span>
+        <h1>Remember what <em>friends</em> tell you.</h1>
+        <p class="lead">Friendpad keeps the little things in one cozy place: what you talked about, what to ask next time, birthdays and big moments. Every friend has a bond that grows when you meet and fades a little with time, so you know who to call next.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Contact support</a>
+          <a class="btn btn-ghost" href="#faq">Read the FAQ</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <picture><source srcset="screenshots/home-dark.png" media="(prefers-color-scheme: dark)" /><img class="phone" src="screenshots/home.png" alt="Friendpad home screen with today's coffee with Maya and upcoming birthdays" /></picture>
+        <img class="mochi" src="img/mascot/mochi.svg" alt="Mochi, the Friendpad mascot" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What you can do with Friendpad</h2>
+        <p>A quick tour of the main screens and where to find things.</p>
+      </div>
+
+      <div class="feature">
+        <div class="copy">
+          <span class="pill">Friends</span>
+          <h3>A page for every friend</h3>
+          <p>Write down what matters while you still remember it. Everything about a friend sits on one scrolling page.</p>
+          <ul>
+            <li><strong>Bring up next time</strong>: questions to ask when you meet</li>
+            <li><strong>Good to know</strong>: food, allergies, favourite drink, where they live</li>
+            <li>People in their life, interests, tags and pinned notes</li>
+          </ul>
+        </div>
+        <div class="shot"><picture><source srcset="screenshots/friend-dark.png" media="(prefers-color-scheme: dark)" /><img src="screenshots/friend.png" alt="Maya's friend page with talking points, a pinned note and facts" loading="lazy" /></picture></div>
+      </div>
+
+      <div class="feature reverse">
+        <div class="shot"><picture><source srcset="screenshots/brief-dark.png" media="(prefers-color-scheme: dark)" /><img src="screenshots/brief.png" alt="Pre-meeting brief for coffee with Maya" loading="lazy" /></picture></div>
+        <div class="copy">
+          <span class="pill coral">Meetups</span>
+          <h3>A brief before you meet</h3>
+          <p>Plan a meetup and Friendpad prepares a short brief: what happened last time, recent life events and the things you wanted to bring up.</p>
+          <ul>
+            <li>Log a meetup after it happens, or plan one ahead</li>
+            <li>A reminder with the brief one hour before</li>
+            <li>Meeting several friends? Switch between them in the brief</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="copy">
+          <span class="pill">Bonds</span>
+          <h3>Watch your friendships grow</h3>
+          <p>Each friend has a bond: a plant, a campfire, a cat, a dog, a cup of coffee and more. It thrives when you meet and slowly gets hungry or thirsty when you don't.</p>
+          <ul>
+            <li>Choose how often you'd like to see each friend</li>
+            <li>See who needs attention at a glance in your garden</li>
+            <li>Water, feed or stoke a bond by logging a meetup</li>
+          </ul>
+        </div>
+        <div class="shot"><picture><source srcset="screenshots/friends-dark.png" media="(prefers-color-scheme: dark)" /><img src="screenshots/friends.png" alt="Your garden: friends shown as a bear, a corgi, a campfire, a plant, a cat and a coffee cup" loading="lazy" /></picture></div>
+      </div>
+
+      <div class="stages" aria-label="The five moods of a cat bond">
+        <div class="stage"><img src="img/bond/cat_orange_thriving.svg" alt="" /><span>Awesome</span></div>
+        <div class="stage"><img src="img/bond/cat_orange_healthy.svg" alt="" /><span>Feeling good</span></div>
+        <div class="stage"><img src="img/bond/cat_orange_thirsty.svg" alt="" /><span>Normal</span></div>
+        <div class="stage"><img src="img/bond/cat_orange_wilting.svg" alt="" /><span>Hungry</span></div>
+        <div class="stage"><img src="img/bond/cat_orange_dormant.svg" alt="" /><span>Sick</span></div>
+      </div>
+
+      <div class="feature reverse" style="margin-top:24px">
+        <div class="shot"><picture><source srcset="screenshots/calendar-dark.png" media="(prefers-color-scheme: dark)" /><img src="screenshots/calendar.png" alt="Calendar for October 2026 with meetups and birthdays marked" loading="lazy" /></picture></div>
+        <div class="copy">
+          <span class="pill butter">Calendar</span>
+          <h3>Birthdays and plans in one calendar</h3>
+          <p>Meetups, birthdays and life events (a new job, a move, a wedding) all show up in the Calendar tab.</p>
+          <ul>
+            <li>Gentle reminders on the day and a few days before</li>
+            <li>Add birthdays for the people in your friends' lives too</li>
+            <li>A Sunday digest of the week ahead</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mascots -->
+  <section id="mascots">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pick your guide</h2>
+        <p>Mochi keeps you company from the first page. You can switch to another guide in the You tab, and change the app icon to match.</p>
+      </div>
+      <div class="mascots">
+        <div class="mascot"><img src="img/mascot/mochi.svg" alt="" /><strong>Mochi</strong><span>Peach rice cake</span></div>
+        <div class="mascot"><img src="img/mascot/pati.svg" alt="" /><strong>Pati</strong><span>Golden puppy</span></div>
+        <div class="mascot"><img src="img/mascot/sakura.svg" alt="" /><strong>Sakura</strong></div>
+        <div class="mascot"><img src="img/mascot/yuzu.svg" alt="" /><strong>Yuzu</strong></div>
+        <div class="mascot"><img src="img/mascot/bao.svg" alt="" /><strong>Bao</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="screens" class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Screenshots</h2>
+        <p>Light and dark, the way you like it.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="screenshots/onboarding.png" alt="Onboarding: Hi, I'm Mochi" loading="lazy" /><figcaption>Meet Mochi</figcaption></figure>
+        <figure><img src="screenshots/home.png" alt="Home" loading="lazy" /><figcaption>Home</figcaption></figure>
+        <figure><img src="screenshots/friends.png" alt="Your garden" loading="lazy" /><figcaption>Your garden</figcaption></figure>
+        <figure><img src="screenshots/friend.png" alt="Friend page" loading="lazy" /><figcaption>Friend page</figcaption></figure>
+        <figure><img src="screenshots/brief.png" alt="Meetup brief" loading="lazy" /><figcaption>Meetup brief</figcaption></figure>
+        <figure><img src="screenshots/calendar.png" alt="Calendar" loading="lazy" /><figcaption>Calendar</figcaption></figure>
+        <figure><img src="screenshots/you.png" alt="You tab with your promise and bond styles" loading="lazy" /><figcaption>You</figcaption></figure>
+        <figure><img src="screenshots/home-dark.png" alt="Home in dark mode" loading="lazy" /><figcaption>Dark mode</figcaption></figure>
+        <figure><img src="screenshots/friend-dark.png" alt="Friend page in dark mode" loading="lazy" /><figcaption>Dark mode</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Frequently asked questions</h2>
+        <p>Answers to the things people ask most.</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>How do I add a friend? <span class="chev">+</span></summary>
+          <div class="answer"><p>Open the <strong>Friends</strong> tab and tap the round <strong>add friend</strong> button next to the tab bar. Give them a name, pick a bond style and how often you'd like to meet.</p></div>
+        </details>
+        <details>
+          <summary>How do I log a meetup? <span class="chev">+</span></summary>
+          <div class="answer"><p>Open a friend and tap <strong>Log a meetup</strong>, or tap their bond. On Home, the <strong>+</strong> button lets you log or plan one too. Plan one ahead with <strong>Plan one</strong> and you'll get a brief of past talks before you meet.</p></div>
+        </details>
+        <details>
+          <summary>How does a bond work? <span class="chev">+</span></summary>
+          <div class="answer">
+            <p>A bond is strongest right after you meet and slowly fades as time passes. How fast it fades depends on how often you'd like to see that friend (weekly, every two weeks, monthly, every few months or yearly).</p>
+            <p>A new friend starts at a healthy level on the day you add them. Logging a meetup fills the bond back up.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can friends have different bond styles? <span class="chev">+</span></summary>
+          <div class="answer"><p>Yes. New friends get the style you picked in <strong>You</strong>, and you can change any friend's style when you edit them. Cats and dogs come in several colours and breeds.</p></div>
+        </details>
+        <details>
+          <summary>What happens to a planned meetup after it's over? <span class="chev">+</span></summary>
+          <div class="answer"><p>Friendpad asks "Did it happen?" on Home and in the meetup's brief. Only meetups you confirm count toward the bond.</p></div>
+        </details>
+        <details>
+          <summary>How do I change or turn off reminders? <span class="chev">+</span></summary>
+          <div class="answer"><p>Go to <strong>You</strong> → the gear button → <strong>Notifications</strong>. Each kind of reminder (meetup briefs, "Did it happen?", birthdays, life events, fading bonds and the weekly digest) can be turned off on its own. For a birthday or life event, choose when to be reminded in that event's sheet.</p></div>
+        </details>
+        <details>
+          <summary>How do I switch to dark mode? <span class="chev">+</span></summary>
+          <div class="answer"><p>Open <strong>Settings</strong> from the gear on the You tab and pick System, Light or Dark.</p></div>
+        </details>
+        <details>
+          <summary>Can I change the mascot or the app icon? <span class="chev">+</span></summary>
+          <div class="answer"><p>Pick a different guide in the <strong>You</strong> tab. If the app icon shows another mascot, You offers an <strong>Update app icon</strong> button so the icon can match.</p></div>
+        </details>
+        <details>
+          <summary>Is Friendpad on iPhone and Android? <span class="chev">+</span></summary>
+          <div class="answer"><p>Yes, Friendpad is made for both iPhone and Android. If you run into a problem on one of them, tell us your phone model and system version so we can help faster.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section id="privacy" class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Your data stays on your phone</h2>
+        <p>Friendpad has no account and no server. What you write about your friends never leaves your device.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="ico">📱</div>
+          <h3>Stored on this device</h3>
+          <p>Friends, notes, meetups and settings are saved only on your phone. There's nothing to sign up for.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🔕</div>
+          <h3>No ads, no tracking</h3>
+          <p>No analytics and no ads. Reminders are scheduled on your phone, not sent from a server.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🗑️</div>
+          <h3>Deleting your data</h3>
+          <p>Delete a friend to remove everything about them, or delete the app to remove all of it. Without an account, there's no copy anywhere else.</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:22px; color:var(--muted)">
+        Read the full <a href="privacy_policy.html">Privacy Policy</a> and <a href="terms.html">Terms &amp; Conditions</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <img src="img/mascot/mochi.svg" alt="" />
+        <h2>Still need help?</h2>
+        <p>Questions, ideas or a bug? Write to us. For a bug, please include your phone model, system version and a short description of what happened. You can also use <strong>Settings → Help and support → Email support</strong> in the app, which fills those in for you.</p>
+        <a class="email" href="mailto:meliksahcakir.apps@gmail.com?subject=Friendpad%20support">meliksahcakir.apps@gmail.com</a>
+        <p class="note">We usually reply within 1–2 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="./"><img class="logo" src="img/app_icon.png" alt="" /> Friendpad</a>
+      <nav class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:meliksahcakir.apps@gmail.com">Contact</a>
+      </nav>
+    </div>
+    <div class="wrap" style="margin-top:14px;"><span id="year">© 2026</span> Friendpad. Made for good friends.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = '© ' + new Date().getFullYear();</script>
+</body>
+</html>
